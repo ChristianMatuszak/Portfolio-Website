@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meine Projekte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" >Christian Matuszak</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Startseite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Über mich</a></li>
+                    <li id="nav_active" class="nav-item"><a class="nav-link active" href="projects.html">Projekte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <h1>Meine Projekte</h1>
+        </div>
+    </header>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6 py-4 px-5">
+            <img src="../images/final project.png" alt="Abschlussprojekt Ausbildung" class="img-fluid rounded mt-4 mx-auto d-block border border-dark">
+        </div>
+        <div class="col-md-6">
+            <h3>TDS Configuration Tool</h3>
+            <p> Das TDS-Configuration-Tool ist eine Anwendung zur Verwaltung der<br> Serverkonfigurationsdatei des TDS-Systems.<br>
+                Ziel war es, eine grafische Benutzeroberfläche (GUI) zu entwickeln, die es ermöglicht,<br> 
+                die Konfiguration einfacher zu bearbeiten und Fehlerquellen zu reduzieren.<br><br>
+                
+                🔹 Hauptfunktionen:<br><br>
+                
+                - Automatisches Laden & Bearbeiten der JSON-Konfigurationsdatei<br>
+                - Dynamische UI-Generierung basierend auf einer Schemadatei<br>
+                - Starten & Stoppen des Servers direkt aus der Anwendung<br>
+                - Fehlervermeidung & Validierung durch integrierte Prüfmechanismen<br>
+                - Automatisierte Tests mit Pytest zur Qualitätssicherung<br></p>
+                <div class="mt-3">
+                    <strong>Technologies:</strong>
+                    <span class="tech-icon mx-2" data-bs-toggle="tooltip" title="Python">
+                        <i class="fa-brands fa-python fa-2x" style="color:#306998;"></i>
+                    </span>
+                    <span class="tech-icon mx-2" data-bs-toggle="tooltip" title="Tkinter">
+                        <i class="fa-solid fa-window-maximize fa-2x" style="color:#3776AB;"></i>
+                    </span>
+                    <span class="tech-icon mx-2" data-bs-toggle="tooltip" title="JSON">
+                        <i class="fa-solid fa-file-code fa-2x" style="color:#f4a261;"></i>
+                    </span>
+                </div><br>
+            <a href="https://github.com/dein-github/projekt1" class="btn btn-primary" target="_blank">Noch nicht public!</a>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5 flex-md-row-reverse" style="margin-bottom: 6rem;">
+        <div class="col-md-6 py-4 px-5">
+            <img src="../images/Zootopia example.png" alt="Zootopia" class="img-fluid rounded mt-4 mx-auto d-block border border-dark">
+        </div>
+        <div class="col-md-6 py-4 px-5">
+            <h3>Zootopia with API (Lernprojekt)</h3>
+            <p> Zootopia ist ein kleines Lernprojekt, das Daten von der API Ninjas Animals API abruft<br>
+                und eine HTML-Seite mit detaillierten Informationen zu den ausgewählten Tieren generiert.
+                Nutzer können Tiernamen eingeben, und das Skript erstellt automatisch eine Webseite mit Bildern,
+                Beschreibungen und weiteren Infos.<br>
+                Das Projekt demonstriert den Umgang mit APIs, Datenverarbeitung in Python und automatischer HTML-Generierung.<br><br>
+                
+                🔹 Hauptfunktionen:<br><br>
+
+                - Abfrage von Tierdaten über eine API<br>
+                - Dynamische Erstellung einer HTML-Seite<br>
+                - Unterstützung für mehrere Tiere gleichzeitig<br>
+                - Einfache Anpassbarkeit für weitere Features<br></p>
+                <div class="mt-3">
+                    <strong>Technologies:</strong>
+                    <span class="tech-icon mx-2" data-bs-toggle="tooltip" title="Python">
+                        <i class="fa-brands fa-python fa-2x" style="color:#306998;"></i>
+                    </span>
+                    <span class="tech-icon mx-2" data-bs-toggle="tooltip" title="HTML">
+                        <i class="fa-brands fa-html5 fa-2x" style="color: #f4a261;"></i>
+                    </span><br><br>
+            <a href="https://github.com/ChristianMatuszak/Zootopia-with-API" class="btn btn-primary" target="_blank">Zum GitHub Repo</a>
+        </div>
+    </div>
+    <div style="height: 3rem;"></div>
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6 py-4 px-5">
+            <img src="../images/Movie_Project.png" alt="Movie_Project" class="img-fluid rounded mt-4 mx-auto d-block border border-dark">
+        </div>
+        <div class="col-md-6 py-4 px-5">
+            <h3>Movie Project (Lernprojekt)</h3>
+            <p> My Movie Database ist eine rein terminalbasierte Anwendung,<br> 
+                mit der eine Filmsammlung verwaltet werden kann.<br> 
+                Alle Filme, Erscheinungsjahre und Bewertungen werden in einer JSON-Datei gespeichert<br>
+                und lassen sich über das Menü abrufen, hinzufügen oder bearbeiten.<br><br>
+
+                🔹 Hauptfunktionen:<br><br>
+                
+                - Auflisten, Hinzufügen, Löschen und Bearbeiten von Filmen<br>
+                - Statistiken zur Filmsammlung abrufen<br>
+                - Zufällige Filmempfehlung erhalten<br>
+                - Filme nach Titel durchsuchen<br>c
+                - Sortieren nach Bewertung oder Erscheinungsjahr<br>
+                - Erweiterte Filtermöglichkeiten<br></p>
+            <div class="mt-3">
+                <strong>Technologies:</strong>
+                <span class="tech-icon mx-2" data-bs-toggle="tooltip" title="Python">
+                    <i class="fa-brands fa-python fa-2x" style="color:#306998;"></i>
+                </span>
+                <span class="tech-icon mx-2" data-bs-toggle="tooltip" title="JSON">
+                    <i class="fa-solid fa-file-code fa-2x" style="color:#f4a261;"></i>
+                </span>
+            </div><br>
+            <a href="https://github.com/ChristianMatuszak/Movie_Project" class="btn btn-primary" target="_blank">Zum GitHub Repo</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    });
+</script>
+</body>
+</html>
