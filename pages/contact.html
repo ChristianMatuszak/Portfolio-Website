@@ -41,7 +41,7 @@
     <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh; margin-top: -100px;">
         <div class="card p-4 shadow-lg" style="width: 400px;">
             <h3 class="text-center">Kontaktformular</h3>
-            <form>
+            <form id="contact-form">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -55,11 +55,32 @@
         </div>
     </div>
     
-    
 
     <footer class="bg-dark text-white text-center p-3 mt-1">
         <p>&copy; 2023 Christian Matuszak. All rights reserved.</p>
     </footer>
+    <script>
+        // Zum Testen des Formulars
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+    
+                const email = document.getElementById("exampleFormControlInput1").value;
+                const message = document.getElementById("exampleFormControlTextarea1").value;
+    
+                if (email.trim() === "" || message.trim() === "") {
+                    alert("Bitte fülle alle Felder aus!");
+                    return;
+                }
+    
+                console.log("E-Mail:", email);
+                console.log("Nachricht:", message);
+    
+                alert("Deine Nachricht wurde (noch nicht wirklich) gesendet!");
+    
+            });
+        });
+    </script>    
 
 </body>
 </html>
