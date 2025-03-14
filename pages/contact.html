@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontaktinfo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" >Christian Matuszak</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Startseite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Über mich</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projekte</a></li>
+                    <li id="nav-active" class="nav-item"><a class="nav-link active" href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <h1>Kontakt</h1>
+        </div>
+    </header>
+
+    <div class="container mt-1">
+        <div class="d-flex justify-content-end align-items-center gap-2">
+            <span class="fw-bold">Kontakt auch möglich über:</span>
+            <a id="linkedin-btn" class="btn btn-primary" href="https://www.linkedin.com/in/christian-matuszak-5032a9250/" target="_blank" rel="noopener noreferrer role="button">
+                <i class="fa-brands fa-linkedin fa-lg"></i> LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh; margin-top: -100px;">
+        <div class="card p-4 shadow-lg" style="width: 400px;">
+            <h3 class="text-center">Kontaktformular</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Nachricht</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Senden</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <footer class="bg-dark text-white text-center p-3 mt-1">
+        <p>&copy; 2023 Christian Matuszak. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
